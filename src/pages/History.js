@@ -22,9 +22,12 @@ function History() {
 
   const handleDeleteExpense = async (id) => {
     try {
-      await fetch(`http://localhost:5000/api/expenses/${id}`, {
-        method: "DELETE",
-      });
+      await fetch(
+        `http://expense-backend-production-a127.up.railway.app:5000/api/expenses/${id}`,
+        {
+          method: "DELETE",
+        },
+      );
       setExpenses(expenses.filter((exp) => exp._id !== id));
     } catch (err) {
       console.error(err);
