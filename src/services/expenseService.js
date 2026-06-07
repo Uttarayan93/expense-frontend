@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:5000/api/expenses";
+const API_URL =
+  "http://expense-backend-production-a127.up.railway.app:5000/api/expenses";
 
 export async function getExpenses() {
   const res = await fetch(API_URL);
