@@ -23,7 +23,7 @@ function History() {
   const handleDeleteExpense = async (id) => {
     try {
       await fetch(
-        `http://expense-backend-production-c7f0.up.railway.app:8080/api/expenses/${id}`,
+        `http://expense-backend-production-c7f0.up.railway.app/api/expenses/${id}`,
         {
           method: "DELETE",
         },
