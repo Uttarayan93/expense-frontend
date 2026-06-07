@@ -1,5 +1,5 @@
 const API_URL =
-  "http://expense-backend-production-a127.up.railway.app:5000/api/expenses";
+  "http://expense-backend-production-c7f0.up.railway.app:8080/api/expenses";
 
 export async function getExpenses() {
   const res = await fetch(API_URL);
